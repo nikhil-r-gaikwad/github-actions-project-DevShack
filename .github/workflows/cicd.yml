@@ -47,7 +47,7 @@ jobs:
     # Infrastructure-as-Code misconfigurations, hardcoded secrets, and software licenses across containers, filesystems, and Kubernetes clusters
        
     - name: Trivy FS Scan
-      run: trivy fs --format table -o fs-report.json .
+      run: trivy fs --format json -o fs-report.json .
       # fs scan report will be generated in . (current folder) in shared runner 
       # but we cant access the report as we are using the shared runner 
 
