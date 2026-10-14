@@ -7,6 +7,12 @@ on:
 jobs:
   compile:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write       # Required to push code, create tags/releases
+      pull-requests: write  # Required to comment on PRs or add labels
+      issues: write         # Required to interact with issues
+      security-events: write # Required for CodeQL / Dependabot uploads
+
 
     steps:
     - uses: actions/checkout@v4
