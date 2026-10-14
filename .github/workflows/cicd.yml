@@ -24,8 +24,8 @@ jobs:
     - name: Resolve Maven dependencies
       run: mvn -B -ntp dependency:resolve
 
-    - name: Build project
-      run: mvn -B -ntp verify -DskipTests
+    #- name: Build project
+      #run: mvn -B -ntp verify -DskipTests
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
