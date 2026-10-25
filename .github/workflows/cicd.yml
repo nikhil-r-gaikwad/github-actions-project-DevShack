@@ -63,6 +63,7 @@ jobs:
 
   Test:
     runs-on: self-hosted
+    needs: Security-check
     #permissions:
      #contents: write       # Required to push code, create tags/releases
       
