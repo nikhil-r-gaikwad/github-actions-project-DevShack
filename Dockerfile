@@ -6,7 +6,7 @@ WORKDIR $APP_HOME
 
 EXPOSE 8080
 
-COPY app/*.jar $APP_HOME/app.jar
+COPY app/*.jar app.jar
 
 RUN ls -la
 
